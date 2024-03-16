@@ -1,0 +1,91 @@
+.gradient-background {
+    background: linear-gradient(300deg, white, #FEC7B4, #FFF3C7);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+body {
+    font-family: "Ropa Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+h1 {
+
+    font-size: 5rem;
+}
+
+h2  {
+    font-size: 3rem;
+}
+
+p, li{
+    font-size: 1.25rem;
+}
+
+#pro {
+    text-decoration: underline;
+}
+
+#about-me {
+    background: url(images/background-about-me.jpg);
+}
+
+#hunt {
+    text-decoration: underline;
+    text-decoration-color: #FEC7B4;
+    font-weight: bold;
+}
+
+.carousel-caption {
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+.carousel-caption * {
+    font-weight: bold;
+    color: #000000;
+}
+
+#interests {
+    background: url(images/background-interests.jpg);
+}
+
+#interests p {
+    font-size: 1.3rem;
+}
+
+.programming {
+    text-decoration: underline;
+    text-decoration-color: #FEC7B4;
+    font-weight: bold;
+}
+
+a {
+    display: inline;
+}
