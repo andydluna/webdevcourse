@@ -52,7 +52,7 @@ for (var i = 0; i < buttonList.length; i++) {
 }
 
 document.addEventListener("keydown", function(event) {
-    makeSound(event.key);
-    buttonAnimation(event.key)
+    makeSound(event.key.toLowerCase());
+    buttonAnimation(event.key.toLowerCase())
 });
 
