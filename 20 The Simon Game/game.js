@@ -58,7 +58,7 @@ $(".btn").click(function() {
     userClickedPattern.push(userChosenColor);
     playSound(userChosenColor);
     animatePress(userChosenColor);
-    checkAnswer(userClickedPattern.length - 1);
+    checkAnswer(level - 1);
 });
 
 $(document).on("keydown", function() {

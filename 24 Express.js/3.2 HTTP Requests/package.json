@@ -1,0 +1,15 @@
+{
+  "name": "http-request",
+  "version": "1.0.0",
+  "description": "an practice usign http request",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andy De Luna",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
