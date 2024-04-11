@@ -42,7 +42,7 @@ app.post("/", async (req, res) => {
     if (result.length == 1) {
       res.render("index.ejs", { data: result });
     } else {
-      let randNum = Math.floor(Math.random() * result.length) - 1;
+      let randNum = Math.floor(Math.random() * result.length);
       let randActivity = result[randNum];
       console.log(randActivity);
       res.render("index.ejs", { data: randActivity });
