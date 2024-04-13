@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>UV Index Detector</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Current UV Index Checker</h1>
+      <p id="description">
+        Remember to use solar protection each day to keep your skin safe!
+      </p>
+    </div>
+
+    <div class="container">
+      <form id="myForm" method="post">
+        <label for="latitude">Latitude:</label>
+        <input type="number" id="latitude" name="latitude" min="-90" max="90" />
+
+        <label for="longitude">Longitude:</label>
+        <input
+          type="number"
+          id="longitude"
+          name="longitude"
+          min="-180"
+          max="180"
+        />
+
+        <input id="submit" type="submit" value="Submit" formaction="/submit" />
+      </form>
+    </div>
+
+    <div class="container">
+      <% if (locals.uv) { %>
+      <h1 id="uv-info">Current UV at the location provided: <%= uv %></h1>
+      <% if (uv >= 5) { %>
+      <p id="high-uv-message">Use sunscreen before going out!</p>
+      <% } else {%>
+      <p id="low-uv-message">
+        UV levels are low, you can still use sunscreen though!
+      </p>
+      <% } %> <% } else if (locals.error) {%>
+      <h1 id="error">There has been an error. Try again later.</h1>
+      <% } %>
+    </div>
+  </body>
+</html>

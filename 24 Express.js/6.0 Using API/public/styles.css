@@ -1,0 +1,60 @@
+body {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  background-color: #fefaf6;
+}
+
+.container {
+  padding: 40px;
+}
+
+input[type="number"] {
+  width: 3em;
+  padding: 0.5em;
+  border: 0.2em solid #8b322c;
+  border-radius: 1em;
+  text-align: center;
+  color: #8b322c;
+  appearance: textfield;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  appearance: none;
+  border: 0.2em solid #8b322c;
+  background: hsl(0 0 0/0);
+  padding: 0.85em 1.5em;
+  color: #8b322c;
+  border-radius: 2em;
+  transition: 1s;
+  &:hover,
+  &:focus,
+  &:active {
+    background: #e91e63;
+    color: #fff;
+  }
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #dd5746;
+}
+
+#uv-info {
+  font-size: 2.75rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+#high-uv-message {
+  color: #dd5746;
+}
+
+#low-uv-message {
+  color: #4793af;
+}
